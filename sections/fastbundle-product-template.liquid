@@ -410,11 +410,11 @@
         </div>
         {% endif %}
 
-        {% if product.metafields.product.at-a-glance %}
+        {% if product.metafields.global.at-a-glance %}
         <div class="product-meta-box">
           <img class="promo__icon" src="{{ 'tag-icon.svg' | asset_url }}">
           <div class="promo__text" >
-            {{ product.metafields.product.at-a-glance}}
+            {{ product.metafields.global.at-a-glance}}
           </div>
         </div>
         {% endif %}
