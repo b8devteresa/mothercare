@@ -1,0 +1,158 @@
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.brand-slide', {
+      perPage: 6,
+      breakpoints: {
+        960: {
+          perPage: 4,
+        }
+      },
+      interval :3000,
+      arrows: true,
+      autoplay: false,
+      pagination:false
+    } ).mount();
+  } );
+</script>
+
+<style>
+  .section__shop-by-brand{
+    margin-top:16px;
+  }
+  .shop-by-brand__title{
+    text-align:center;
+    font-size:24px;
+    font-weight:500;
+    padding:8px 0;
+  }
+
+  .section__shop-by-brand .slider-grid {
+    margin-top:32px;
+  }
+
+  .brand-slide li {
+    text-align:center;
+    padding:10px;
+  }
+
+  .brand-slide .splide__arrow {
+    background: none;
+  }
+
+  .brand-slide .splide__arrow--prev {
+    left:-3em;
+  }
+  .brand-slide .splide__arrow--next {
+    right:-3em;
+  }
+
+  .brand-slide .splide__pagination {
+    bottom:-2.2em;
+  }
+
+  .brand-slide .splide__pagination li {
+    padding:5px;
+  }
+
+  .brand-slide .splide__pagination__page.is-active {
+    transform: unset;
+    background: #165C7D;
+  }
+
+  .brand-slide  .splide__pagination__page {
+    background: none;
+    border: 1px solid #165C7D !important;
+  }
+  
+  /* mobile */
+  @media only screen and (max-width: 959px) {
+    .brand-slide .splide__arrow--next {
+      right: -1.5em;
+    }
+    .brand-slide .splide__arrow--prev {
+      left: -1.5em;
+    }
+  }
+
+</style>
+
+<div class="page-width section__shop-by-brand">
+  <div class="shop-by-brand__title">{{ section.settings.title }}
+  </div>
+  
+  <div class="grid slider-grid">
+    <div class="splide brand-slide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <img src="{{ 'Arrow-left.svg' | asset_url }}"> 
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <img src="{{ 'Arrow-right.svg' | asset_url }}"> 
+        </button>
+      </div>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+          <li class="splide__slide">
+            {% if block.settings.url %}
+            <a href="{{ block.settings.url}}">
+            {% endif %}
+              <img src="{{ block.settings.image | img_url: '500x' }}">
+            {% if block.settings.url %}
+            </a>
+            {% endif %}
+          </li>
+         {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Shop by brand"
+  },
+  "class": "index-section",
+  "settings": [
+	{	
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+    	}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Shop by brand"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

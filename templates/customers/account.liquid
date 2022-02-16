@@ -1,0 +1,123 @@
+<style>
+  .account__items {
+    display:flex;
+    flex-wrap: wrap;
+    padding:0 40px;
+    justify-content: space-between;
+  }
+  .account__item-continer{
+    transition: all .3s ease;
+    display: block;
+    height: 100%;
+    width:48%;
+  }
+
+  .account__item-continer a {
+    padding: 24px 30px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #003971;
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    background: #fff;
+    text-transform: lowercase;
+  }
+
+  .account__item-continer a:hover{
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+  }
+
+  .account__item-continer span {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left:20px;
+  }
+
+  .account__item-continer img {
+    width: 55px;
+    min-height: 60px;
+    height: 100%;
+    object-fit: contain;
+  }
+
+   /* desktop */
+  @media only screen and (min-width: 960px) {
+  }
+
+  /* mobile */
+  @media only screen and (max-width: 959px) {
+    .account-side-image{
+      display:none;
+    }
+    .account__items{
+      padding:0;
+    }
+    .account__item-continer{
+      width:100%;
+      padding: 0;
+      padding-left: 25px;
+    }
+  }
+
+
+</style>
+<div class="page-width">
+  <div class="section-header text-center">
+    <h1>{{ 'customer.account.title' | t }}</h1>
+    {{ 'layout.customer.log_out' | t | customer_logout_link }}
+  </div>
+
+  <div class="grid">
+    <div class="grid__item account-side-image medium-up--one-quarter small--one-whole">
+      <img src="{{ 'memberprofile.jpg' | asset_img_url: '1000x' }}" alt="member profile">
+    </div>
+    <div class="grid__item medium-up--three-quarters small--one-whole">
+      <div class="account__items">
+        <div class="account__item-continer">
+          <a class="" href="/pages/order-list">
+            <img src="{{ 'my_history.png' | asset_img_url: '100x' }}">
+            <span>Order History</span>
+          </a>
+        </div>
+        <div class="account__item-continer">
+          <a href="/account?view=edit">
+            <img src="{{ 'my_details.png' | asset_img_url: '100x' }}">
+            <span>Account Details</span>
+          </a>
+        </div>
+        <div class="account__item-continer">
+          <a href="/account/addresses">
+            <img src="{{ 'my_address.png' | asset_img_url: '100x' }}">
+            <span>My Addresses</span>
+          </a>
+        </div>
+        <div class="account__item-continer">
+          <a href="#swym-wishlist">
+            <img src="{{ 'my_wishlist.png' | asset_img_url: '100x' }}">
+            <span>Wishlist</span>
+          </a>
+        </div>
+        <div class="account__item-continer">
+          <a href="/apps/giftregistry">
+            <img src="{{ 'my_gift.png' | asset_img_url: '100x' }}">
+            <span>Gift Registry</span>
+          </a>
+        </div>
+        
+        <div class="account__item-continer">
+          <a href="/pages/email-preference">
+            <img src="{{ 'my_newsletter.png' | asset_img_url: '100x' }}">
+            <span>Newsletter Subscription</span>
+          </a>
+        </div>
+        
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

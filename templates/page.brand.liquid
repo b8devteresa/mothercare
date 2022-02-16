@@ -1,0 +1,329 @@
+<style>
+  .page__brand{
+    max-width:1080px;
+    margin:auto;
+  }
+  .brand-logo-row, 
+  .static-image-sider-row, 
+  .video-row,
+  .collection-row .grid__item,
+  .image-banner-row{
+    margin-bottom:40px;
+  }
+  .video-row .grid__item:nth-child(odd),
+  .two-item-row:nth-child(odd),
+  .image-banner-row .grid__item:nth-child(odd){
+    padding-left:0;
+    padding-right:10px;
+  }
+  .video-row .grid__item:nth-child(even),
+  .two-item-row:nth-child(even),
+  .image-banner-row .grid__item:nth-child(even){
+    padding-left:10px;
+  }
+
+  .static-image-sider-row .grid__item{
+    padding:0;
+  }
+  .brand__collection-image{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .brand__collection-title{
+    width:100%;
+    background: #243746;
+    color: #fde4dd;
+    margin: 5px auto 0;
+    padding:10px 0;
+  }
+  .brand__collection-title:hover{
+    background: #fde4dd;
+    color: #243746;
+  }
+
+  .shop-all-btn{
+    width:100%;
+    background: #96694c;
+    color: #ffffff;
+    padding:16px 0;
+  }
+  .brand-description-row {
+    padding: 30px;
+    background: #f9f9f9;
+    border: 1px solid #cfcfcf;
+  }
+  
+  .brand__description-title{
+    padding:10px 0;
+    font-size:18px;
+  }
+  .video-text-container{
+    background: #ecd5a6;
+    padding: 30px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .brand__banner-image{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  
+  .four-item-row{
+    padding-left:0;
+    padding-right:15px;
+  }
+  /* desktop */
+  @media only screen and (min-width: 960px) {
+  }
+
+  /* mobile */
+  @media only screen and (max-width: 959px) {
+    .page__brand .grid{
+      margin-left:0;
+    }
+    .video-row .grid__item:nth-child(odd),
+    .two-item-row:nth-child(odd),
+    .image-banner-row .grid__item:nth-child(odd){
+      padding:0;
+    }
+    .video-row .grid__item:nth-child(even),
+    .two-item-row:nth-child(even),
+    .image-banner-row .grid__item:nth-child(even){
+      padding:0;
+    }
+  }
+
+
+</style>
+
+<script>
+	document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.slider', {
+      perPage: 1,
+      interval :3000,
+      arrows: true,
+        rewind: true,
+      autoplay: true,
+    } ).mount();
+	} );
+</script>
+
+{%assign brand = page.metafields.brand-page %}
+<div class="page-width">
+{{ page.content }}
+</div>
+
+<div class="page-width page__brand">
+  <!-- Brand logo -->
+  {% if brand.logo != '' %}
+  <div class="grid text-center brand-logo-row">
+    <div class="brand__logo">
+      <img src={{ brand.logo }}>
+    </div>
+  </div>
+  {% endif %}
+  <!--End of Brand logo -->
+
+  
+  <!-- Slider row -->
+  {% assign slider-images = brand.slider-images | split: "," %}
+  {% assign slider-links = brand.slider-links | split: "," %}
+  {%if slider-images.size > 0 and brand.slider-static-image == null %}  
+  <div class="grid text-center static-image-sider-row">
+    <div class="grid__item medium-up--one-whole ">
+      <div class="splide slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for image in slider-images %}
+            <li class="splide__slide">
+              {% if slider-links[forloop.index0].size > 2 %}
+              <a href={{ slider-links[forloop.index0] }}>
+                {% endif %}
+                <img src={{ slider-images[forloop.index0] }}>
+                {% if slider-links[forloop.index0].size > 2 %}
+              </a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <!--End of slider row -->
+  
+  <!-- Static image & slider row -->
+  {% assign slider-images = brand.slider-images | split: "," %}
+  {% assign slider-links = brand.slider-links | split: "," %}
+  {%if slider-images.size > 0 and brand.slider-static-image != null %}  
+  <div class="grid text-center static-image-sider-row">
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <img src={{ brand.slider-static-image }}>
+    </div>
+    <div class="grid__item medium-up--one-half small--one-whole ">
+      <div class="splide slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for image in slider-images %}
+            <li class="splide__slide">
+              {% if slider-links[forloop.index0].size > 2 %}
+              <a href={{ slider-links[forloop.index0] }}>
+                {% endif %}
+                <img src={{ slider-images[forloop.index0] }}>
+                {% if slider-links[forloop.index0].size > 2 %}
+              </a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <!--End of Static image & slider row -->
+
+  <!-- Vimeo Video row -->
+  {% assign vimeo-video = brand.vimeo-video | split: "," %}
+  {% assign video-image = brand.video-image %}
+  <!-- Video Only -->
+
+  {% if vimeo-video.size > 0 and video-image == null %}
+  <div class="grid text-center video-row">
+    {% for video in vimeo-video %}
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <iframe src="https://player.vimeo.com/video/{{ vimeo-video[forloop.index0] }}" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Vimeo + Image  -->
+  {% if vimeo-video.size == 1 and video-image != '' %}
+  <div class="grid text-center video-row">
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <iframe src="https://player.vimeo.com/video/{{ vimeo-video }}" width="100%" height="317" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <img src={{ video-image }}>
+    </div>
+  </div>
+  {% endif %}
+  <!--End of Vimeo video row -->
+  
+  
+  
+
+
+
+  <!-- Collection row -->
+  {% assign collection-image = brand.collection-image | split: "," %}
+  {% assign collection-title = brand.collection-title | split: "," %}
+  {% assign collection-link = brand.collection-link | split: "," %}
+
+  
+  {% if collection-image.size > 0 and collection-title.size > 0 %}
+  <div class="grid text-center collection-row">
+    {% for collection in collection-image %}
+    <div class="grid__item {% if forloop.length < 5%}two-item-row medium-up--one-half small--one-whole{% else %}four-item-row medium-up--one-quarter small--one-half {% endif %}  ">
+      {% if collection-link[forloop.index0].size > 2 %}
+      <a href={{ collection-link[forloop.index0] }}>
+        {% endif %}
+        <img class="brand__collection-image" src={{ collection-image[forloop.index0] }}>
+        <div class="brand__collection-title">
+          {{ collection-title[forloop.index0] | remove: '"' }}
+        </div>
+        {% if collection-link[forloop.index0].size > 2 %}
+      </a>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <!--End of collection row -->
+
+  <!-- Banner image row -->
+  {% assign image-banner = brand.image-banner | split: "," %}
+  {% assign image-banner-link = brand.image-banner-link | split: "," %}
+   
+  {% if image-banner.size > 0 %}
+  <div class="grid text-center image-banner-row">
+    {% for banner in image-banner %}
+    <div class="grid__item medium-up--one-half small--one-whole">
+      {% if image-banner-link[forloop.index0].size > 2 %}
+      <a href={{ image-banner-link[forloop.index0] }}>
+        {% endif %}
+        <img class="brand__banner-image" src={{ image-banner[forloop.index0] }}>
+        {% if image-banner-link[forloop.index0].size > 2 %}
+      </a>
+      {% endif %}
+    </div>
+
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  <!-- End of Banner image row -->
+
+  
+  <!-- Youtube Video row -->
+  {% assign youtube-video = brand.youtube-video | split: "," %}
+  {% assign video-text = brand.video-text %}
+
+  <!-- Video Only -->
+  {% if youtube-video.size > 0 and video-text == null %}
+  <div class="grid text-center video-row">
+    {% for video in youtube-video %}
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/{{ youtube-video[forloop.index0] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Youtube + Text  -->
+  {% if youtube-video.size == 1 and video-text != '' %}
+  <div class="grid text-center video-row">
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <iframe width="100%" height="400px" src="https://www.youtube.com/embed/{{ youtube-video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="grid__item medium-up--one-half small--one-whole">
+      <div class="video-text-container text-left">{{ video-text }}</div>
+    </div>
+  </div>
+  {% endif %}
+  <!--End of Youtube video row -->
+  
+  <!-- Shop now row -->
+  {% assign brand-shop-url = brand.brand-shop-url %}
+  {% if brand-shop-url != null %}
+  <div class="grid text-center shop-now-row">
+    <a href={{ brand-shop-url }}>
+      <div class="shop-all-btn">Shop All {{ page.title }}</div>
+    </a>
+  </div>
+  {% endif %}
+  <!--End of Shop now row -->
+
+   <!-- Description  row -->
+  {% assign description = brand.description %}
+  {% if description != null %}
+  <div class="grid text-left brand-description-row">
+    <div class="brand__description-title">
+      About {{ page.title }}
+    </div>
+    <div class="brand__description-content">
+      {{ description }}
+    </div>
+  </div>
+  {% endif %}
+  <!--End of Description row -->
+
+
+</div>

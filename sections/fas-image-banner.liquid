@@ -1,0 +1,151 @@
+<script>
+	document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.banner-slide', {
+      perPage: 1,
+      interval :3000,
+      arrows: true,
+        rewind: true,
+      autoplay: true,
+    } ).mount();
+	} );
+</script>
+
+<style>
+  #shopify-section-hero{
+    padding-top: 0;
+  }
+  .section__wtb-banner-slide .grid{
+    margin-left:0;
+    margin-bottom: 10px;
+  }
+ 
+  .banner-slide li {
+    text-align:center;
+    padding:20px 0;
+  }
+
+  .banner-slide .splide__arrow {
+    background: none;
+  }
+
+  .banner-slide .splide__arrow--prev {
+    left:-3em;
+  }
+  .banner-slide .splide__arrow--next {
+    right:-3em;
+  }
+
+  .side-banner-image {
+    width:100%;
+  }
+  .splide__pagination {
+    margin: 0 !important;
+    bottom: -10px;
+  }
+  
+  .splide__pagination li {
+  padding:5px;
+  }
+  
+  .splide__pagination__page.is-active {
+    transform: unset;
+    background: #165C7D;
+  }
+
+  .splide__pagination__page {
+    background: none;
+    border: 1px solid #165C7D !important;
+  }
+</style>
+
+<div class="section__wtb-banner-slide">
+  <div class="grid slider-grid">
+
+    <div class="splide banner-slide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <img src="{{ 'Arrow-left.svg' | asset_url }}"> 
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <img src="{{ 'Arrow-right.svg' | asset_url }}"> 
+        </button>
+      </div>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            {% assign image = block.settings.image %}
+            {% assign imageMobile = block.settings.image_mobile %}
+            {% if block.settings.image_mobile %}
+              {% assign imageMobile = block.settings.image_mobile %}
+            {% else %}
+              {% assign imageMobile = image %}
+            {% endif %}
+            {% assign link = block.settings.link %}
+            
+              {% if image %}
+              <li class="splide__slide">
+                   {% if link != blank %}
+                        <a href="{{ link }}">
+                          <img class="side-banner-image" src="{{ image | img_url: '1024x' }}" alt="{{ image.alt }}" >
+                          <img  class="mobile-side-banner-image" src="{{ imageMobile | img_url: '719x' }}" alt="{{ imageMobile.alt }}" />
+                        </a>
+                    {% else %}
+                      <img class="side-banner-image" src="{{ image | img_url: '1024x' }}" alt="{{ image.alt }}" >
+                      <img  class="mobile-side-banner-image" src="{{ imageMobile | img_url: '719x' }}" alt="{{ imageMobile.alt }}" />
+                    {% endif %}
+              </li>
+              {% endif %}
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name":  "Slideshow",
+  "class": "index-section",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Slide link URL"
+        }
+      ]
+    }
+   ],
+  "presets": [
+    {
+      "name": "Slideshow",
+      "category": {
+        "en": "Mother Care"
+      },
+      "blocks": [
+        {
+          "type": "feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

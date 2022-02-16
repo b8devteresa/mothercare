@@ -1,0 +1,207 @@
+<style>
+  .section__four-images-grid .grid{
+    margin-bottom:50px;
+  }
+
+  .four-grid-container{
+    color:#505759;
+    text-align:center;
+  }
+  .four-grid__text-container h2{
+    font-size:24px;
+    padding:20px 0 0;
+    text-transform: lowercase;
+    margin:0;
+  }
+  .four-grid__text-container p{
+    font-size:18px;
+  }
+  .four-grid__text-container span {
+    display:block;
+    margin:auto;
+    font-size:12px;
+    text-decoration:underline;
+  }
+  
+   /* mobile */
+  @media only screen and (max-width: 959px) {
+    .four-grid__text-container h2{
+      font-size: 17px;
+      padding: 10px 0 10px;
+      height: 75px;
+      letter-spacing: 0px;
+      line-height:1.5;
+    }
+    .four-grid__text-container p {
+      font-size: 14px;
+      height: 30px;
+    }
+  }
+  
+
+</style>
+
+<div class="page-width section__four-images-grid">
+  <div class="grid">
+    <div class="grid__item one-half">
+      <div class="four-grid-container">
+        <a href="{{ section.settings.url-button-1 }}">
+          <img class="" src="{{ section.settings.image-banner-1 | img_url: '1024x' }}">
+        </a>
+        <div class="four-grid__text-container">
+          <h2>{{ section.settings.title-1 }}</h2>
+          <p>{{ section.settings.description-1 }}</p>
+          <a href="{{ section.settings.url-button-1 }}"><span>find out more</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="grid__item one-half">
+      <div class="four-grid-container">
+        <a href="{{ section.settings.url-button-2 }}">
+          <img class="" src="{{ section.settings.image-banner-2 | img_url: '1024x' }}">
+        </a>
+        <div class="four-grid__text-container">
+          <h2>{{ section.settings.title-2 }}</h2>
+          <p>{{ section.settings.description-2 }}</p>
+          <a href="{{ section.settings.url-button-2 }}"><span>find out more</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid__item one-half">
+      <div class="four-grid-container">
+        <a href="{{ section.settings.url-button-3 }}">
+          <img class="" src="{{ section.settings.image-banner-3 | img_url: '1024x' }}">
+        </a>
+        <div class="four-grid__text-container">
+          <h2>{{ section.settings.title-3 }}</h2>
+          <p>{{ section.settings.description-3 }}</p>
+          <a href="{{ section.settings.url-button-3 }}"><span>find out more</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="grid__item one-half">
+      <div class="four-grid-container">
+        <a href="{{ section.settings.url-button-4 }}">
+          <img class="" src="{{ section.settings.image-banner-4 | img_url: '1024x' }}">
+        </a>
+        <div class="four-grid__text-container">
+          <h2>{{ section.settings.title-4 }}</h2>
+          <p>{{ section.settings.description-4 }}</p>
+          <a href="{{ section.settings.url-button-4 }}"><span>find out more</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Four Images Grid"
+  },
+  "class": "index-section",
+  "settings": [
+	{	
+      "type": "image_picker",
+      "id": "image-banner-1",
+      "label": "Banner 1"
+    },
+	{
+      "type": "text",
+      "id": "title-1",
+      "label": "Title 1",
+      "default": "Default"
+    },	
+	{
+      "type": "text",
+      "id": "description-1",
+      "label": "Description 1",
+      "default": "Default"
+    },	
+	{
+      "type": "url",
+      "id": "url-button-1",
+      "label": "Button URL 1"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-banner-2",
+      "label": "Banner 2"
+    },
+	{
+      "type": "text",
+      "id": "title-2",
+      "label": "Title 2",
+      "default": "Default"
+    },	
+	{
+      "type": "text",
+      "id": "description-2",
+      "label": "Description 2",
+      "default": "Default"
+    },	
+	{
+      "type": "url",
+      "id": "url-button-2",
+      "label": "Button URL 2"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-banner-3",
+      "label": "Banner 3"
+    },
+	{
+      "type": "text",
+      "id": "title-3",
+      "label": "Title 3",
+      "default": "Default"
+    },	
+	{
+      "type": "text",
+      "id": "description-3",
+      "label": "Description 3",
+      "default": "Default"
+    },	
+	{
+      "type": "url",
+      "id": "url-button-3",
+      "label": "Button URL 3"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-banner-4",
+      "label": "Banner 4"
+    },
+	{
+      "type": "text",
+      "id": "title-4",
+      "label": "Title 4",
+      "default": "Default"
+    },	
+	{
+      "type": "text",
+      "id": "description-4",
+      "label": "Description 4",
+      "default": "Default"
+    },	
+	{
+      "type": "url",
+      "id": "url-button-4",
+      "label": "Button URL 4"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Four Images Grid"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

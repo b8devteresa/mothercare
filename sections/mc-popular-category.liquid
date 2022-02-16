@@ -1,0 +1,129 @@
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.category-slide', {
+      perPage: 6,
+      breakpoints: {
+        960: {
+          perPage: 4,
+        },
+        540: {
+          perPage: 2,
+        }
+      },
+      interval :3000,
+      arrows: true,
+      autoplay: false,
+      pagination:false
+    } ).mount();
+  } );
+</script>
+<style>
+  .section__popular-cateogry h2{
+    font-weight:500;
+    text-align:center;
+    text-transform: lowercase;
+    font-size:24px;
+    letter-spacing:0.4px;
+  }
+  .section__popular-cateogry .grid{
+    margin-left:0;
+  }
+  .category-slide{
+    margin-top:38px;
+  }
+  .category-slide li {
+    text-align:center;
+    padding:20px;
+  }
+  .category__item-title{
+    font-weight:400;
+    font-size:15px;
+    margin-top:20px;
+    display:block;
+  }
+
+  .category-slide .splide__arrow {
+    background: none;
+  }
+
+  .category-slide .splide__arrow--prev {
+    left:-3em;
+  }
+  .category-slide .splide__arrow--next {
+    right:-3em;
+  }
+</style>
+<div class="page-width section__popular-cateogry">
+  <h2>popular categories</h2>
+  <div class="grid">
+    
+    <div class="splide category-slide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <img src="{{ 'Arrow-left.svg' | asset_url }}"> 
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <img src="{{ 'Arrow-right.svg' | asset_url }}"> 
+        </button>
+      </div>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+          <li class="splide__slide">
+            <a href="{{ block.settings.url }}"><img src="{{ block.settings.image | img_url: '500x' }}">
+            {% if block.settings.title %}
+              <span class="category__item-title">{{ block.settings.title }}</span></a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Popular Category"
+  },
+  "class": "index-section",
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+    	}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Popular Category"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,112 @@
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.banner-slide', {
+      perPage: 1,
+      interval :3000,
+      arrows: true,
+      rewind: true,
+      autoplay: true,
+    } ).mount();
+  } );
+</script>
+
+<style>
+  .section__banner-slide{
+    padding-bottom:40px;
+    margin-top:-40px;
+  }
+  .section__banner-slide .grid{
+    margin-left:0;
+  }
+  .banner-slide{
+    margin-top:20px;
+  }
+  .banner-slide li {
+    text-align:center;
+    padding:20px 0;
+  }
+
+  .banner-slide .splide__arrow {
+    background: none;
+  }
+
+  .banner-slide .splide__arrow--prev {
+    left:-3em;
+  }
+  .banner-slide .splide__arrow--next {
+    right:-3em;
+  }
+
+  .side-banner-image {
+    width:100%;
+  }  
+</style>
+
+<div class="page-width section__banner-slide">
+  <div class="grid slider-grid">
+
+    <div class="splide banner-slide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <img src="{{ 'Arrow-left.svg' | asset_url }}"> 
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <img src="{{ 'Arrow-right.svg' | asset_url }}"> 
+        </button>
+      </div>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+          <li class="splide__slide">
+            <a href="{{ block.settings.url }}">
+              <img class="side-banner-image" src="{{ block.settings.image | img_url: '1024x' }}">
+            </a>
+          </li>
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Image Banner"
+  },
+  "class": "index-section",
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+    	}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Image Banner"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

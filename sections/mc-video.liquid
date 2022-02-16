@@ -1,0 +1,69 @@
+<script>
+  window.onload=function(){
+    document.getElementById('press').addEventListener('click', function(){
+      document.getElementById('vid').play();
+      document.getElementById('press').style.display = 'none';
+    });
+    document.getElementById('vid').onended = function(){
+      document.getElementById('press').style.display = 'block';
+    }
+  };
+</script>
+
+<style>
+  .video-container{
+    position:relative;
+  }
+  .video-play-btn{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background:none;
+    border:none;
+  }
+</style>
+
+<div class="page-width section__video">
+  <div class="video-container">
+    <video controls autoplay loop muted playsinline id="vid" width="100%" height="100%" poster="{{ section.settings.preview-image | img_url: '1024x' }}">
+      <source src="{{ section.settings.video-url }}" type="video/mp4">
+    </video>
+<!--     <button class="video-play-btn" id='press'>
+      <img src="{{ 'play-btn.svg' | asset_url }}"> 
+    </button> -->
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Video"
+  },
+  "class": "index-section",
+  "settings": [
+		{
+          "type": "image_picker",
+          "id": "preview-image",
+          "label": "Preview Image"
+        },
+        {
+          "type": "url",
+          "id": "video-url",
+          "label": "Video URL"
+    	}
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Video"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

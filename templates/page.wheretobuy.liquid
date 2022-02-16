@@ -1,0 +1,26 @@
+<style>
+.section__wtb-banner-slide .mobile-side-banner-image{
+  display: none;
+}
+@media only screen and (max-width: 769px) {
+  .section__wtb-banner-slide .mobile-side-banner-image{
+    display: block;
+  }
+  .section__wtb-banner-slide .side-banner-image{
+   display: none;
+  }
+}
+</style>
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <!-- <h2 class="static-page__title">{{ page.title }}</h2> -->
+      <div class="rte">
+       {% section 'fas-image-banner' %}
+        {% section 'hero' %}
+        {% section 'fas-map' %}
+      </div>
+    </div>
+  </div>
+</div>

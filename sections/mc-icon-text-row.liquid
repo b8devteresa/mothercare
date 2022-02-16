@@ -1,0 +1,244 @@
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.icon-slide', {
+      perPage: 4,
+      breakpoints: {
+        960: {
+          perPage: 1,
+          drag: true,
+          arrows: true,
+        }
+      },
+      interval :3000,
+      arrows: false,
+      autoplay: false,
+      pagination:false,
+      drag: false,
+      dragAngleThreshold: 0
+    } ).mount();
+  } );
+</script>
+
+<style>
+  .icon-slide {
+    width:100%;
+  }
+  .section__icon-text-row{
+    padding:48px 0;
+    border-top:2px solid #D9D9D6;
+  }
+  .icon__container{
+    width:100%;
+  }
+  .icon-text__icon{
+    max-width:100px;
+    max-height:55px;
+  }
+
+  .section__icon-text-row .grid {
+    display:flex;
+    flex-flow: wrap;
+  }
+
+  .icon__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__icon-text-row,.icon-text__container{
+    text-align:center;
+  }
+  .icon-text__title{
+    color:#165C7D;
+    font-size:18px;
+    font-weight:500;
+    margin-top:20px;
+  }
+  .icon-text__p{
+    font-size:14px;
+    padding:4px 0;
+    display:block;
+  }
+  
+  .icon-slide .splide__arrow{
+    display:none;
+    background:none;
+  }
+  
+  
+
+  /* mobile */
+  @media only screen and (max-width: 959px) {
+    .icon-slide .splide__arrow{
+      display:block;
+    }
+     .icon-slide .splide__arrow--next {
+      right: -1.5em;
+    }
+    .icon-slide .splide__arrow--prev {
+      left: -1.5em;
+    }
+    
+    .icon__item{
+      padding-bottom:40px;
+    }
+    .section__icon-text-row{
+      padding-bottom:0;
+    }
+    
+    .section__icon-text-row {
+      padding-bottom:40px;
+    }
+    
+  }
+</style>
+
+
+
+<div class="section__icon-text-row">
+  <div class="page-width">
+    <div class="grid slider-grid">
+      <div class="splide icon-slide">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <img src="{{ 'Arrow-left.svg' | asset_url }}"> 
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <img src="{{ 'Arrow-right.svg' | asset_url }}"> 
+          </button>
+        </div>
+
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="icon__container">
+                <img  class="icon-text__icon" src="{{ section.settings.image-1 | img_url: '500x' }}">
+              </div>
+              <div class="icon-text_container">
+                <div class="icon-text__title">{{ section.settings.subtitle-1 }}</div>
+                <a class="icon-text__p" href="">{{ section.settings.description-1 }}</a>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="icon__container">
+                <img  class="icon-text__icon" src="{{ section.settings.image-2 | img_url: '500x' }}">
+              </div>
+              <div class="icon-text_container">
+                <div class="icon-text__title">{{ section.settings.subtitle-2 }}</div>
+                <a class="icon-text__p" href="">{{ section.settings.description-2 }}</a>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="icon__container">
+                <img  class="icon-text__icon" src="{{ section.settings.image-3 | img_url: '500x' }}">
+              </div>
+              <div class="icon-text_container">
+                <div class="icon-text__title">{{ section.settings.subtitle-3 }}</div>
+                <a class="icon-text__p" href="">{{ section.settings.description-3 }}</a>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="icon__container">
+                <img  class="icon-text__icon" src="{{ section.settings.image-4 | img_url: '500x' }}">
+              </div>
+              <div class="icon-text_container">
+                <div class="icon-text__title">{{ section.settings.subtitle-4 }}</div>
+                <a class="icon-text__p" href="">{{ section.settings.description-4 }}</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Icon Text Row"
+  },
+  "class": "index-section",
+  "settings": [
+	{	
+      "type": "image_picker",
+      "id": "image-1",
+      "label": "1st Image"
+    },
+	{
+      "type": "text",
+      "id": "subtitle-1",
+      "label": "1st Subtitle",
+      "default": "Default"
+    },
+    {
+      "type": "textarea",
+      "id": "description-1",
+      "label": "1st Description",
+      "default": "Welcome to my shop!"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-2",
+      "label": "2nd Image"
+    },
+	{
+      "type": "text",
+      "id": "subtitle-2",
+      "label": "2nd Subtitle",
+      "default": "Default"
+    },
+    {
+      "type": "textarea",
+      "id": "description-2",
+      "label": "2nd Description",
+      "default": "Welcome to my shop!"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-3",
+      "label": "3rd Image"
+    },
+	{
+      "type": "text",
+      "id": "subtitle-3",
+      "label": "3rd Subtitle",
+      "default": "Default"
+    },
+    {
+      "type": "textarea",
+      "id": "description-3",
+      "label": "3rd Description",
+      "default": "Welcome to my shop!"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-4",
+      "label": "4th Image"
+    },
+	{
+      "type": "text",
+      "id": "subtitle-4",
+      "label": "4th Subtitle",
+      "default": "Default"
+    },
+    {
+      "type": "textarea",
+      "id": "description-4",
+      "label": "4th Description",
+      "default": "Welcome to my shop!"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Icon Text Row"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

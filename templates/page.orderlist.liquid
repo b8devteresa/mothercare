@@ -1,0 +1,66 @@
+<style>
+  .account-table-title{
+    margin: 0;
+    color: #888;
+    background: #f6f6f6;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 9px 20px;
+    border: 1px solid #d6d6d6;
+    font-weight:normal;
+  }
+</style>
+
+{% if customer %}
+<div class="page-width">
+  <div class="grid myaccount">
+    {% include 'account-side-menu' %}
+    <div class="grid__item medium-up--three-quarters">
+      {% paginate customer.orders by 20 %}
+
+      <table class="responsive-table">
+        <thead>
+          <tr>
+            <th class="account-table-title" colspan="5">Order History</th>
+          </tr>
+          <tr>
+            <th scope="col">{{ 'customer.orders.order_number' | t }}</th>
+            <th scope="col">{{ 'customer.orders.date' | t }}</th>
+            <th scope="col">{{ 'customer.orders.payment_status' | t }}</th>
+            <th scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
+            <th scope="col">{{ 'customer.orders.total' | t }}</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          {% for order in customer.orders %}
+          <tr>
+            <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row">
+              <a href="{{ order.customer_url }}" class="btn btn--secondary btn--small" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">{{ order.name }}</a>
+            </th>
+            <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | time_tag: format: 'date' }}</td>
+            <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+            <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+            <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      {% if customer.orders.size == 0 %}
+      <p>{{ 'customer.orders.none' | t }}</p>
+      {% endif %}
+
+
+      {%- if paginate.pages > 1 -%}
+      {% include 'pagination', paginate: paginate %}
+      {%- endif -%}
+      {% endpaginate %}
+    </div>
+  </div>
+</div>
+{% else %}
+<script>
+  window.location.replace("/account/login");
+</script>
+{% endif %}

@@ -1,0 +1,1323 @@
+{
+  "current": {
+    "color_text": "#505759",
+    "color_body_text": "#505759",
+    "color_text_field_text": "#505759",
+    "type_base_size": 14,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/mothercareHongKong",
+    "social_instagram_link": "https:\/\/www.instagram.com\/mothercarehongkong\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/user\/mothercaretv",
+    "favicon": "shopify:\/\/shop_images\/favicon_32x32_bd1fe95a-994f-4851-8055-5ff4e72d8190.jpg",
+    "message_account": "<p>Cannot login? Please call<em><strong> 2627-0008.<\/strong><\/em><br\/>Our customer service will assist you.<\/p>",
+    "checkout_logo_image": "shopify:\/\/shop_images\/mothercare_word_logo_360x_e72a680a-87b0-444b-a046-3468b3267a29.png",
+    "checkout_logo_size": "small",
+    "checkout_accent_color": "#165c7d",
+    "checkout_button_color": "#165c7d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/mothercare_word_logo.png",
+          "logo_max_width": 175,
+          "top_linklist": "header-top-menu",
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff",
+          "info-1": "<b>Free Delivery<\/b> above RM400",
+          "info-2": "<b>Collect in store<\/b> mothercare",
+          "info-3": ""
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "shop by",
+              "menu": "footer-shopby"
+            }
+          },
+          "4f68850b-008f-40ba-8641-3be33cc221f6": {
+            "type": "link_list",
+            "settings": {
+              "title": "help & info",
+              "menu": "footer-menu"
+            }
+          },
+          "ed3006a0-b53d-4f07-a15c-ee917bcc95bb": {
+            "type": "link_list",
+            "settings": {
+              "title": "about",
+              "menu": "footer-about"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "subtitle": "Get $50 off your first purchase and get updates and news!"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "4f68850b-008f-40ba-8641-3be33cc221f6",
+          "ed3006a0-b53d-4f07-a15c-ee917bcc95bb",
+          "footer-1"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#ffffff",
+          "color_footer_text": "#165c7d",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "1627212464189aa425": {
+        "type": "mc-popular-category",
+        "blocks": {
+          "a22dd6c0-95fc-46d9-8c8e-8c8cb0889663": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/furniture115x115.jpg",
+              "title": "furnitures",
+              "url": "shopify:\/\/collections\/nursery-safety-furniture"
+            }
+          },
+          "4a6efa42-5363-4870-8613-9b00adad4783": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mattresscrib115x115.jpg",
+              "title": "mattress cribs",
+              "url": "shopify:\/\/collections\/nursery-safety-mattress-mattress-crib"
+            }
+          },
+          "9d8d4af8-2ad6-4e5b-b150-828a71d5fce3": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/toddlerbib115x115.jpg",
+              "title": "toddler bibs",
+              "url": "shopify:\/\/collections\/feeding-bib-toddler-bib"
+            }
+          },
+          "94517bf3-820b-46aa-8adf-63db082ee2da": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carrier115x115.jpg",
+              "title": "carriers",
+              "url": "shopify:\/\/collections\/travel-carrier"
+            }
+          },
+          "a6f3a480-d74e-4c6e-9db9-e2472619fba2": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lightweightstroller115x115.jpg",
+              "title": "lightweight stollers",
+              "url": "shopify:\/\/collections\/travel-pushchair-lightweight-stroller"
+            }
+          },
+          "27eb6709-f43f-4d64-a543-f74d5fbc8502": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bottlefeeding115x115.jpg",
+              "title": "bottle feedings",
+              "url": "shopify:\/\/collections\/feeding-bottle-feeding"
+            }
+          },
+          "8a580958-ecbd-4bc8-98b5-66b25c570aad": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/toddlercarseat115x115.jpg",
+              "title": "toddler carseats",
+              "url": "shopify:\/\/collections\/travel-car-seat-toddler-carseat"
+            }
+          },
+          "40d97562-7f3f-4fa5-b44b-1cc6d9276f38": {
+            "type": "category",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/maternitypillow115x115.jpg",
+              "title": "maternity pillows",
+              "url": "shopify:\/\/collections\/maternity-nursing-maternity-care-maternity-pillow"
+            }
+          }
+        },
+        "block_order": [
+          "a22dd6c0-95fc-46d9-8c8e-8c8cb0889663",
+          "4a6efa42-5363-4870-8613-9b00adad4783",
+          "9d8d4af8-2ad6-4e5b-b150-828a71d5fce3",
+          "94517bf3-820b-46aa-8adf-63db082ee2da",
+          "a6f3a480-d74e-4c6e-9db9-e2472619fba2",
+          "27eb6709-f43f-4d64-a543-f74d5fbc8502",
+          "8a580958-ecbd-4bc8-98b5-66b25c570aad",
+          "40d97562-7f3f-4fa5-b44b-1cc6d9276f38"
+        ],
+        "settings": {}
+      },
+      "1627216934dbf9725a": {
+        "type": "mc-new-in",
+        "settings": {
+          "header": "new in",
+          "image-1": "shopify:\/\/shop_images\/Hegen_220x220_25c3a9de-cad1-475b-bba7-a2879a8ac9fa.jpg",
+          "title-1": "hegen",
+          "button-1": "find out more",
+          "url-1": "shopify:\/\/collections\/hegen",
+          "image-2": "shopify:\/\/shop_images\/O5820010000_1_1024x1024_2x_ef6bcab4-1d4c-4f6e-b3e3-d94840a3577b.jpg",
+          "title-2": "stokke mutable",
+          "button-2": "find out more",
+          "url-2": "https:\/\/www.mothercare.com.hk\/search?q=mutable",
+          "image-3": "shopify:\/\/shop_images\/Childhome_220x220_cbfbe726-74f6-470d-936b-dfaa4a7a53e3.jpg",
+          "title-3": "childhome",
+          "button-3": "find out more",
+          "url-3": "shopify:\/\/collections\/childhome",
+          "image-4": "shopify:\/\/shop_images\/O7630009222_1_1024x1024_2x_1542cfb1-bcee-42f5-ad1f-451031441f92.jpg",
+          "title-4": "micro",
+          "button-4": "find out more",
+          "url-4": "shopify:\/\/collections\/micro"
+        }
+      },
+      "16272181188e86629a": {
+        "type": "mc-text-image",
+        "disabled": true,
+        "blocks": {
+          "272d9511-009c-4767-badb-ea51c02f413a": {
+            "type": "category",
+            "disabled": true,
+            "settings": {
+              "layout": "left",
+              "title": "parenthood",
+              "paragraph": "Intro to product range intro to product range, intro to the product",
+              "button": "find out more",
+              "url": ""
+            }
+          },
+          "8aea7bdc-f3df-4a07-8858-065c285b26f6": {
+            "type": "category",
+            "disabled": true,
+            "settings": {
+              "layout": "right",
+              "title": "today & everyday",
+              "paragraph": "Intro to product range intro to product range, intro to the product",
+              "button": "find out more",
+              "url": ""
+            }
+          },
+          "36f65dbd-ef8f-44ac-820c-01084ad84c9e": {
+            "type": "category",
+            "disabled": true,
+            "settings": {
+              "layout": "left",
+              "title": "pushchairs & carseats",
+              "paragraph": "Intro to product range intro to product range, intro to the product",
+              "button": "find out more",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "272d9511-009c-4767-badb-ea51c02f413a",
+          "8aea7bdc-f3df-4a07-8858-065c285b26f6",
+          "36f65dbd-ef8f-44ac-820c-01084ad84c9e"
+        ],
+        "settings": {}
+      },
+      "1627223886df6778c9": {
+        "type": "mc-collection-promotion",
+        "disabled": true,
+        "blocks": {
+          "8fec3fcf-e917-412c-8434-9e4a880909f4": {
+            "type": "Category",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mc-promotion-1.png",
+              "url": "shopify:\/\/collections"
+            }
+          },
+          "b5aa09a0-380e-4d71-89d6-15200e8a72a0": {
+            "type": "Category",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mc-promotion-4.png",
+              "url": ""
+            }
+          },
+          "8511bc5e-a6a9-4cd0-b928-c2b87b821ec1": {
+            "type": "Category",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mc-promotion-3.png",
+              "url": ""
+            }
+          },
+          "b3c60db7-facf-4e35-9606-77f56fa04234": {
+            "type": "Category",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mc-promotion-4.png",
+              "url": ""
+            }
+          },
+          "4f578f2d-b7a1-4180-b8ac-1eeb6fe0dd70": {
+            "type": "Category",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mc-promotion-1.png",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "8fec3fcf-e917-412c-8434-9e4a880909f4",
+          "b5aa09a0-380e-4d71-89d6-15200e8a72a0",
+          "8511bc5e-a6a9-4cd0-b928-c2b87b821ec1",
+          "b3c60db7-facf-4e35-9606-77f56fa04234",
+          "4f578f2d-b7a1-4180-b8ac-1eeb6fe0dd70"
+        ],
+        "settings": {
+          "url-banner": "https:\/\/www.mothercare.com.hk\/collections\/aw21-fashion-promotion?utm_source=MC_Homepage&utm_medium=Feature_Banner&utm_campaign=Fashion_Promotion&utm_content=30%25_off",
+          "title": "selected fashion on sale",
+          "description": "",
+          "button-text": "find out more",
+          "url-button": "https:\/\/www.mothercare.com.hk\/collections\/aw21-fashion-promotion?utm_source=MC_Homepage&utm_medium=Feature_Banner&utm_campaign=Fashion_Promotion&utm_content=30%25_off"
+        }
+      },
+      "16272251845da76007": {
+        "type": "mc-shop-by-brand",
+        "blocks": {
+          "358aea9b-dc46-4418-87c1-d5cfdad22a3d": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_59S_9a90a53d-9146-4ca5-94c2-878dcfb0edc2.jpg",
+              "url": "shopify:\/\/collections\/59s"
+            }
+          },
+          "bd537670-e9df-4801-8d84-12e445d4853a": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_aden_anais_00a39a7a-ec43-44de-8c94-3a910539d391.jpg",
+              "url": "shopify:\/\/collections\/aden-anais"
+            }
+          },
+          "f53a0825-4412-4c21-8275-f0759e896ea0": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_babybjorn_b394678f-3990-4b76-9594-3513466ba4b0.jpg",
+              "url": "shopify:\/\/collections\/babybjorn"
+            }
+          },
+          "46ae556c-2945-4505-8588-c41d24446e26": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/babyzen_logo_0cda3fb4-3000-4d38-aea7-92377f49ee03.jpg",
+              "url": "shopify:\/\/collections\/babyzen"
+            }
+          },
+          "340a88e8-bed0-4ea2-a13f-726192d4245e": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/beaba_138x88_776520cb-cae0-44fe-9718-f2be0af857c7.jpg",
+              "url": "shopify:\/\/collections\/beaba"
+            }
+          },
+          "29b3d239-5beb-4e72-990a-e49661cd90ca": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_biocair_b356ff95-377c-463b-9372-45932a1d05fa.jpg",
+              "url": "shopify:\/\/collections\/biocair"
+            }
+          },
+          "f324f9f2-4c2c-4eb4-afdb-8f5e4732257b": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_bugaboo_1681d74e-af1e-4608-8fa1-c34ca68e9658.jpg",
+              "url": "shopify:\/\/collections\/bugaboo"
+            }
+          },
+          "d1d8e5ca-69e9-4ad2-8f70-45871ec7f686": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_calibowl_13f46732-49c7-4971-bd96-7c6c0e353604.jpg",
+              "url": "shopify:\/\/collections\/calibowl"
+            }
+          },
+          "3682ca91-bf28-4799-b660-2f3f21439169": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_cybex_23b11ea7-b90d-468c-b0fc-bc38a0d0dc5d.jpg",
+              "url": "shopify:\/\/collections\/cybex"
+            }
+          },
+          "37c862a1-d1fe-459e-a52a-8cc9c2f9241d": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/e_14_8e8d9dde-fb1d-481a-bab8-a18446ed5c0b.png",
+              "url": "shopify:\/\/collections\/dockatot"
+            }
+          },
+          "98d82f01-242c-456f-9c0f-3345fa2fb62c": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_elc_1beea534-49b2-4540-b41f-715cc5673e86.jpg",
+              "url": "shopify:\/\/collections\/early-learning-centre"
+            }
+          },
+          "8cb405df-c823-4598-b4cd-c2a33eeff2e2": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_ergobaby_7e185f8f-4088-46af-9b54-c66e7cfe8c6b.jpg",
+              "url": "shopify:\/\/collections\/ergobaby"
+            }
+          },
+          "b8f63d30-0c15-45e3-8927-233571478ebb": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_jellycat_ddd9a4de-d8dd-4b3c-92d0-5d0993b0153a.jpg",
+              "url": "shopify:\/\/collections\/jellycat"
+            }
+          },
+          "1402b8c2-33a2-4085-90c9-9afe180f580e": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_love_to_dream_72f35a66-3379-43f3-8d30-e9e8495b03de.jpg",
+              "url": "shopify:\/\/collections\/love-to-dream"
+            }
+          },
+          "f0edd420-997f-478a-b684-922115678f2e": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_loveamme_f6f7ccf6-3c8b-4b74-b601-154d122ae901.jpg",
+              "url": "shopify:\/\/collections\/loveamme"
+            }
+          },
+          "3cc54c3b-d454-4a58-b088-737426c1bd43": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_mimosa_fb33bfdc-4095-43fe-8a54-e4fbb63ff624.jpg",
+              "url": "shopify:\/\/collections\/mimosa"
+            }
+          },
+          "2c3bd417-a3a0-4543-b7cf-f5d8b0ac3fc9": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_red_castle_bfa9f66e-22a7-4c5d-8c95-9ed402778be0.jpg",
+              "url": "shopify:\/\/collections\/red-castle"
+            }
+          },
+          "0173a500-ca6c-4227-9a61-3ab6654ad536": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_skip-hop_d005fa49-fa9e-42e7-9cd3-25dcf76cf500.jpg",
+              "url": "shopify:\/\/collections\/skip-hop"
+            }
+          },
+          "c87722b6-fa57-4841-bce4-3317b9ee029d": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_snapkis_b0720f66-3348-4827-aa56-0ee39ced81b7.jpg",
+              "url": "shopify:\/\/collections\/snapkis"
+            }
+          },
+          "458afda2-3067-46c9-9fe6-161f78ed6333": {
+            "type": "brand",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20210923-new_MC_website_brandlogo_138x88_tommee-tippee_2410e301-935e-4346-b6c5-ca7a9438b47e.jpg",
+              "url": "shopify:\/\/collections\/tommee-tippee"
+            }
+          }
+        },
+        "block_order": [
+          "358aea9b-dc46-4418-87c1-d5cfdad22a3d",
+          "bd537670-e9df-4801-8d84-12e445d4853a",
+          "f53a0825-4412-4c21-8275-f0759e896ea0",
+          "46ae556c-2945-4505-8588-c41d24446e26",
+          "340a88e8-bed0-4ea2-a13f-726192d4245e",
+          "29b3d239-5beb-4e72-990a-e49661cd90ca",
+          "f324f9f2-4c2c-4eb4-afdb-8f5e4732257b",
+          "d1d8e5ca-69e9-4ad2-8f70-45871ec7f686",
+          "3682ca91-bf28-4799-b660-2f3f21439169",
+          "37c862a1-d1fe-459e-a52a-8cc9c2f9241d",
+          "98d82f01-242c-456f-9c0f-3345fa2fb62c",
+          "8cb405df-c823-4598-b4cd-c2a33eeff2e2",
+          "b8f63d30-0c15-45e3-8927-233571478ebb",
+          "1402b8c2-33a2-4085-90c9-9afe180f580e",
+          "f0edd420-997f-478a-b684-922115678f2e",
+          "3cc54c3b-d454-4a58-b088-737426c1bd43",
+          "2c3bd417-a3a0-4543-b7cf-f5d8b0ac3fc9",
+          "0173a500-ca6c-4227-9a61-3ab6654ad536",
+          "c87722b6-fa57-4841-bce4-3317b9ee029d",
+          "458afda2-3067-46c9-9fe6-161f78ed6333"
+        ],
+        "settings": {
+          "title": "shop by brand"
+        }
+      },
+      "1627227699a7bb1bfc": {
+        "type": "mc-image-banner",
+        "blocks": {
+          "cd3897d2-63b8-4c84-8067-142e18263028": {
+            "type": "banner",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20220106_Beaba-bundle_HomepageSlidebanner_940x385_86c1e623-c272-4be5-b106-68a46327de88.jpg",
+              "url": "https:\/\/www.mothercare.com.hk\/collections\/highlight-beaba-bundle?utm_source=MC_Homepage&utm_medium=Slide_Banner&utm_campaign=Beaba_Bundle_promo&utm_content=Beaba_Bundle_LP"
+            }
+          },
+          "d9efa690-8df6-47d8-957d-2682845a5172": {
+            "type": "banner",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20220106_Mum2Mum_HomepageSlidebanner_940x385_b814bb24-1ab8-43af-82da-8f4734172f39.jpg",
+              "url": "https:\/\/www.mothercare.com.hk\/collections\/highlight-60-for-2-mum2mun-bamboo-collar-bib?utm_source=MC_Homepage&utm_medium=Slide_Banner&utm_campaign=Mum2mum_bib_promo&utm_content=Mum2mum_bib_promo_LP"
+            }
+          },
+          "8492b873-739d-4c82-8256-3ede723bca4e": {
+            "type": "banner",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/newweb_940x385_402d653a-673d-4dfa-9ab4-b80e7c6e24bb_1024x_copy.jpg",
+              "url": "shopify:\/\/collections\/snapkis"
+            }
+          },
+          "4df44c62-597b-4f35-979a-9cc89f5881c8": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/940_x_385_pixel.jpg",
+              "url": "https:\/\/www.mothercare.com.hk\/collections\/hegen\/products\/hegen-pcto-wonder-blue-collection-limited-edition?utm_source=MC_Homepage&utm_medium=Slide_Banner&utm_campaign=Limited_Hegen_promo&utm_content=Hegen_PCTO_Wonder_Blue_Collection_LP"
+            }
+          },
+          "cc4cd507-adea-4e41-a4ea-fa946148b600": {
+            "type": "banner",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20211209_Micro_NewArrival_Homepage-banner-940x385.jpg",
+              "url": "https:\/\/www.mothercare.com.hk\/collections\/micro"
+            }
+          },
+          "3c9d7462-5a74-47ed-8b2f-03346eb1f4de": {
+            "type": "banner",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20211213_BiocairPromotion_Slide_banner_940x385_532b01de-6ae1-43d2-b515-b2e2a2f94cf2.jpg",
+              "url": "https:\/\/www.mothercare.com.hk\/collections\/buy-biocair-free-6-x-purifying-solutions"
+            }
+          },
+          "caa792ed-f49a-45e2-946d-21e081f3a611": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20211123_Jellycat_Slide_banner_940x385_7528d1ea-5cbe-4775-9f20-f21b416718c9.jpg",
+              "url": "shopify:\/\/collections\/jellycat"
+            }
+          }
+        },
+        "block_order": [
+          "cd3897d2-63b8-4c84-8067-142e18263028",
+          "d9efa690-8df6-47d8-957d-2682845a5172",
+          "8492b873-739d-4c82-8256-3ede723bca4e",
+          "4df44c62-597b-4f35-979a-9cc89f5881c8",
+          "cc4cd507-adea-4e41-a4ea-fa946148b600",
+          "3c9d7462-5a74-47ed-8b2f-03346eb1f4de",
+          "caa792ed-f49a-45e2-946d-21e081f3a611"
+        ],
+        "settings": {}
+      },
+      "162809274055052a60": {
+        "type": "mc-text-image-single",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/570x570_front_20220107_Fashion_Promotion_2xPro.jpg",
+          "title": "further sale",
+          "paragraph": "50% off",
+          "button": "find out more",
+          "url": "https:\/\/www.mothercare.com.hk\/collections\/highlight-autumn-winter-fashion-50-off?utm_source=MC_Homepage&utm_medium=Central_Descriptive&utm_campaign=Fashion_further_sale_50%25off&utm_content=further_sale_LP"
+        }
+      },
+      "1628093745d47d996e": {
+        "type": "mc-video",
+        "settings": {
+          "preview-image": "shopify:\/\/shop_images\/video-preview-exmaple_1024x_d7080a43-68ea-4df3-aaff-b9fb26066e6b.png",
+          "video-url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0580\/1708\/7670\/files\/Mothercare-video.mp4?v=1636681794"
+        }
+      },
+      "1628094768a5838983": {
+        "type": "mc-four-grid-image",
+        "settings": {
+          "image-banner-1": "shopify:\/\/shop_images\/20211202_BiocairPromotion_2x2Promotion_Banner_570x570_1b1254dd-b520-433d-adc6-5cfbb6564713.jpg",
+          "title-1": "buy biocair machine",
+          "description-1": "free 6 x purifying solutions",
+          "url-button-1": "https:\/\/www.mothercare.com.hk\/collections\/buy-biocair-free-6-x-purifying-solutions?utm_source=MC_Homepage&utm_medium=Feature_Banner&utm_campaign=Biocair_Promo&utm_content=Buy_Machine_Free_solutions",
+          "image-banner-2": "shopify:\/\/shop_images\/20211213_Big_ELC_toys__promobanner_460x460_966f93e7-003a-46fb-8fc3-faabf3a2d700.jpg",
+          "title-2": "Big ELC toys",
+          "description-2": "up to 50% off",
+          "url-button-2": "shopify:\/\/collections\/2021-xmas-big-toys",
+          "image-banner-3": "shopify:\/\/shop_images\/570x570_micro_new_arrival.jpg",
+          "title-3": "micro",
+          "description-3": "new arrival",
+          "url-button-3": "shopify:\/\/collections\/micro",
+          "image-banner-4": "shopify:\/\/shop_images\/20211213_Easywalker40_promobanner_460x460_19b0c286-0b4e-4aaf-8655-e1ac855bd812.jpg",
+          "title-4": "easywalker charley - 40% off",
+          "description-4": "online exclusive",
+          "url-button-4": "shopify:\/\/products\/easywalker-charley-night-black"
+        }
+      },
+      "1628123331b34e457a": {
+        "type": "mc-featured-products",
+        "blocks": {
+          "0fd92e6c-5901-4ef4-9f1c-06697c6554fe": {
+            "type": "product",
+            "settings": {
+              "product": "igdr0873"
+            }
+          },
+          "fd78f966-2b72-45ea-aecd-865b4817f242": {
+            "type": "product",
+            "settings": {
+              "product": "igts0518"
+            }
+          },
+          "237e28cb-3760-45ed-8dba-0d622323f9c0": {
+            "type": "product",
+            "settings": {
+              "product": "gbl1283"
+            }
+          },
+          "666bf2bc-dcdb-43ae-80d8-546b878f096e": {
+            "type": "product",
+            "settings": {
+              "product": "gtt0137"
+            }
+          },
+          "ffcea2b1-2d80-4fd6-a7bd-1596b7ad1c24": {
+            "type": "product",
+            "settings": {
+              "product": "gpa0416"
+            }
+          }
+        },
+        "block_order": [
+          "0fd92e6c-5901-4ef4-9f1c-06697c6554fe",
+          "fd78f966-2b72-45ea-aecd-865b4817f242",
+          "237e28cb-3760-45ed-8dba-0d622323f9c0",
+          "666bf2bc-dcdb-43ae-80d8-546b878f096e",
+          "ffcea2b1-2d80-4fd6-a7bd-1596b7ad1c24"
+        ],
+        "settings": {
+          "title": "popular products"
+        }
+      },
+      "mc-icon-text-row": {
+        "type": "mc-icon-text-row",
+        "settings": {
+          "image-1": "shopify:\/\/shop_images\/mc-icon-1.png",
+          "subtitle-1": "Digital Nursery Advisor",
+          "description-1": "",
+          "image-2": "shopify:\/\/shop_images\/mc-icon-2.png",
+          "subtitle-2": "Click & Collect",
+          "description-2": "",
+          "image-3": "shopify:\/\/shop_images\/mc-icon-3.png",
+          "subtitle-3": "Parenting Workshop",
+          "description-3": "",
+          "image-4": "shopify:\/\/shop_images\/mc-icon-4.png",
+          "subtitle-4": "Sparkle Clean",
+          "description-4": ""
+        }
+      },
+      "fas-image-banner": {
+        "type": "fas-image-banner",
+        "blocks": {
+          "dd201d4a-4b54-418f-9b78-e807100d64af": {
+            "type": "feature",
+            "disabled": true,
+            "settings": {
+              "link": ""
+            }
+          },
+          "4e2d04c6-33b2-402f-ae99-fc0b00faecd9": {
+            "type": "feature",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/VIP_980x290_621a675c-d82c-43b0-a1ee-ba78e84de69f.jpg",
+              "link": ""
+            }
+          },
+          "9e5092c3-97d2-4cc4-b3d0-847452fe51d4": {
+            "type": "feature",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/201903_Collect_in_store_inside_page_banner_980x290px.jpg",
+              "link": ""
+            }
+          },
+          "8ad87339-9eff-4840-9f80-363f2638bf05": {
+            "type": "feature",
+            "disabled": true,
+            "settings": {
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "dd201d4a-4b54-418f-9b78-e807100d64af",
+          "4e2d04c6-33b2-402f-ae99-fc0b00faecd9",
+          "9e5092c3-97d2-4cc4-b3d0-847452fe51d4",
+          "8ad87339-9eff-4840-9f80-363f2638bf05"
+        ],
+        "settings": {}
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/map_image_20211216.jpg",
+          "alignment": "top",
+          "hero_layout": "full_width",
+          "hero_size": "large",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "fas-map": {
+        "type": "fas-map",
+        "blocks": {
+          "1c02f363-e2ba-4da1-b3a1-864dca21d3c2": {
+            "type": "maps",
+            "settings": {
+              "shop_name": "Prince's Building",
+              "shop_address": "Shop 305-307, 3\/F, Prince's Building, Central, HK.",
+              "shop_phone": "2523 5704",
+              "shop_opentime": "Monday – Sunday : 10.00am - 7.30pm",
+              "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3691.9186938661537!2d114.15722141454755!3d22.281069549224124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400645e0446f9%3A0x918b99d7cf8c5e14!2sMothercare!5e0!3m2!1svi!2s!4v1628737827432!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
+            }
+          },
+          "df5cc873-2312-4011-8191-013b58b9c433": {
+            "type": "maps",
+            "settings": {
+              "shop_name": "Lee Garden Two",
+              "shop_address": "Shop 201-202, 2\/F Lee Garden Two, 28 Yun Ping Road, Causeway Bay, HK.",
+              "shop_phone": "2504 1088",
+              "shop_opentime": "Monday – Thursday: 11.00am - 8:00pm<br>Friday - Sunday, Public Holiday : 11.00am -8:30pm",
+              "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3691.984133835615!2d114.18353401454758!3d22.27859084931343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040056abf68acd%3A0x5267c6ee3d63e3d4!2sMothercare!5e0!3m2!1svi!2s!4v1628746231506!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
+            }
+          },
+          "190b6e4b-8215-4c87-9180-01d06e4eb7ad": {
+            "type": "maps",
+            "settings": {
+              "shop_name": "Ocean Terminal",
+              "shop_address": "Shop OT G52, G\/F, Ocean Terminal, Harbour City, Tsim Sha Tsui, Kln.",
+              "shop_phone": "2735 5738",
+              "shop_opentime": "Monday – Thursday: 11.00am - 8:00pm<br>Friday - Sunday, Public Holiday : 11.00am -8:30pm",
+              "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d3691.984261855201!2d114.185723!3d22.278586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbeba04af40c319a5!2sTwelve%20Cupcakes!5e0!3m2!1sen!2sin!4v1628747003184!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
+            }
+          },
+          "6161de09-69a3-4f61-9bc5-557eb927818d": {
+            "type": "maps",
+            "settings": {
+              "shop_name": "MOKO",
+              "shop_address": "Shop 366, 3\/F, Moko (Grand Century Place), Mong Kok, Kln.",
+              "shop_phone": "2380 1832",
+              "shop_opentime": "Monday – Thursday: 11.00am - 8:00pm<br>Friday - Sunday, Public Holiday : 11.00am -8:30pm",
+              "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d3690.8106442174712!2d114.171981!3d22.323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaaaf5460f159a6c9!2sMothercare!5e0!3m2!1sen!2sin!4v1628747307836!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
+            }
+          },
+          "e07d944c-15d2-46c8-888c-3461235b28b5": {
+            "type": "maps",
+            "settings": {
+              "shop_name": "MegaBox",
+              "shop_address": "Shop 5-6, Level 9, MegaBox, 38 Wang Chiu Road, Kowloon Bay, Kln.",
+              "shop_phone": "2359 0018",
+              "shop_opentime": "Monday – Thursday: 11.00am - 8:00pm<br>Friday - Sunday, Public Holiday : 11.00am -8:30pm",
+              "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d3690.9036864860423!2d114.20808700000002!3d22.319482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa2a4e7579cee4a!2sMothercare!5e0!3m2!1sen!2sin!4v1628747383993!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
+            }
+          },
+          "2dcfd7cc-34c7-4216-9f50-3c19230fe3ee": {
+            "type": "maps",
+            "settings": {
+              "shop_name": "New Town Plaza III",
+              "shop_address": "Shop A235B, Level 2, New Town Plaza III, Shatin, New Territories.",
+              "shop_phone": "2698 5533",
+              "shop_opentime": "Monday – Thursday: 11.00am - 8:00pm<br>Friday - Sunday, Public Holiday : 11.00am -8:30pm",
+              "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d3689.2210163514073!2d114.188962!3d22.383024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd73fa204ed3304!2sMothercare!5e0!3m2!1sen!2sin!4v1628747451194!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
+            }
+          }
+        },
+        "block_order": [
+          "1c02f363-e2ba-4da1-b3a1-864dca21d3c2",
+          "df5cc873-2312-4011-8191-013b58b9c433",
+          "190b6e4b-8215-4c87-9180-01d06e4eb7ad",
+          "6161de09-69a3-4f61-9bc5-557eb927818d",
+          "e07d944c-15d2-46c8-888c-3461235b28b5",
+          "2dcfd7cc-34c7-4216-9f50-3c19230fe3ee"
+        ],
+        "settings": {}
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": true,
+          "enable_payment_button": false,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "1644843594196147a1": {
+        "type": "mc-image-banner",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "1627227699a7bb1bfc",
+      "1627212464189aa425",
+      "1627216934dbf9725a",
+      "16272181188e86629a",
+      "162809274055052a60",
+      "1628093745d47d996e",
+      "1628094768a5838983",
+      "1627223886df6778c9",
+      "16272251845da76007",
+      "1628123331b34e457a",
+      "1644843594196147a1"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

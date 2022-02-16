@@ -1,0 +1,41 @@
+<style>
+  .account-detail-header{  
+    margin: 0;
+    color: #888;
+    background: #f6f6f6;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 9px 20px;
+    border: 1px solid #d6d6d6;
+    font-weight: normal;
+  }
+  
+  .form-vertical {
+    border-left: 1px solid rgb(235, 235, 235);
+    border-right: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding: 10px 20px;
+  }
+</style>
+
+{% if customer %}
+<div class="page-width">
+  <div class="grid myaccount">
+    {% include 'account-side-menu' %}
+    <div class="grid__item medium-up--three-quarters">
+      <div class="account-detail-header">
+        Newsletter Subscription 
+      </div>
+      <div class="form-vertical">
+      {% render "customer-fields", form_id: "WBtJR1" %}
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+<script>
+  window.location.replace("/account/login");
+</script>
+{% endif %}
+
+

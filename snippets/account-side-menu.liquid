@@ -1,0 +1,67 @@
+<style>
+  .account-side-menu{
+    border: 1px solid #d6d6d6;
+    margin-bottom: 20px;
+  }
+  .account-side-menu li:first-child{
+    margin: 0;
+    color: #888;
+    background: #f6f6f6;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 9px 20px;
+  }
+
+  .account-side-menu li:not(:first-child){
+    border-top: 1px solid #d6d6d6;
+    padding: 11px 20px;
+  }
+
+  .account-side-menu li a {
+    color: #414141;
+    display: block;
+    line-height: 17px;
+    font-size: 13px;
+  }
+  
+  .account-side-menu li a:hover {
+    text-decoration: underline;
+  }
+</style>
+<div class="grid__item medium-up--one-quarter">
+  <ul class="account-side-menu">
+    <li>
+      My Account
+    </li>
+    <li class="">
+      <a href="/pages/order-list" class="my-history">
+        Order History 
+      </a>
+    </li>
+    <li class="">
+      <a href="/account?view=edit" class="my-detail">
+        Account Details 
+      </a>
+    </li>
+    <li class="">
+      <a href="/account/addresses" class="my-address">
+        My Addresses
+      </a>
+    </li>
+    <li class="">
+      <a href="#swym-wishlist" class="my-wishlist">
+        Wishlist
+      </a>
+    </li>
+    <li class="">
+      <a href="/apps/giftregistry" class="my-gift-registry">
+        Gift Registry
+      </a>
+    </li>
+    <li class="">
+      <a href="/pages/email-preference" class="my-newsletter">
+        Newsletter Subscription
+      </a>
+    </li>
+  </ul>
+</div>

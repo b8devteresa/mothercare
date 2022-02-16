@@ -1,0 +1,91 @@
+{
+  "form": {
+    "id": "WBtJR1",
+    "name": "Email Subscription",
+    "handle": "email-subscription-1",
+    "theme_id": "124431532214",
+    "settings": {
+      "locales": {
+        "back": "Back",
+        "next": "Next",
+        "cancel": "Cancel",
+        "edit_link": "Edit account",
+        "fix_errors": "Please fix errors before continuing",
+        "is_invalid": "{{label}} is invalid",
+        "email_taken": "Email has already been taken",
+        "phone_taken": "Phone number has already been taken",
+        "server_error": "Could not save form, please try again later",
+        "step_counter": "Step {{current}} of {{total}}",
+        "verify_email": "Check your email for a verification link to activate your account.",
+        "not_available": "An error occurred while saving your account, please try again in a few minutes.",
+        "create_account": "Create account",
+        "update_account": "Update account",
+        "recaptcha_error": "Challenge verification failed, please try again",
+        "creating_account": "Creating account...",
+        "updating_account": "Updating account...",
+        "invalid_email_domain": "Email contains an invalid domain name"
+      },
+      "enableRecaptcha": false,
+      "whitelistedTags": "",
+      "recaptchaSiteKey": "",
+      "markRequiredFields": false,
+      "displayCancelButton": true,
+      "goBackAfterSubmission": false,
+      "cancelButtonRedirectUrl": "\/account\/login",
+      "postSubmissionRedirectUrl": "\/account",
+      "goBackAfterCancelButtonClick": false
+    },
+    "install_locations": [
+      "page_template",
+      "manual"
+    ],
+    "created_at": "2021-09-11T05:09:51Z",
+    "updated_at": "2021-09-11T05:10:57Z",
+    "revision_ids": [
+      "OzTXoG0",
+      "3qTeA4d"
+    ]
+  },
+  "revision": {
+    "id": "OzTXoG0",
+    "created_at": "2021-09-11T05:09:59Z",
+    "updated_at": "2021-09-11T05:10:56Z",
+    "embed_version": "4.6.0",
+    "published_at": "2021-09-11T05:10:56Z",
+    "fields": [
+      {
+        "id": 195393,
+        "dataColumn": {
+          "key": "accepts_marketing",
+          "label": "Accepts marketing",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 0,
+        "type": "checkbox",
+        "stepId": 199225,
+        "default": true,
+        "label": "Subscribe to our email newsletter",
+        "placeholder": null,
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [],
+        "sensitive": null,
+        "preset": "accepts_marketing",
+        "autotag": null
+      }
+    ],
+    "steps": [
+      {
+        "id": 199225,
+        "title": "Step 1",
+        "description": ""
+      }
+    ],
+    "rules": []
+  }
+}

@@ -1,0 +1,165 @@
+<style>
+  .section__text-image .grid{
+    margin-left:0;
+    display: flex;          
+    flex-direction: row; 
+    align-items: stretch;    
+    height: 100%;
+    flex-flow: wrap;
+  }
+
+  .section__text-image .grid__item{
+    padding-left:0;
+  }
+
+  .text-image__text-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:40px 60px;
+    text-align:center;
+  }
+  
+  .text-image__image-container{
+    padding-bottom:64%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text-image__title{
+    font-size:24px;
+    font-weight:500;
+    padding:8px 0;
+  }
+
+  .text-image__p{
+    font-size:18px;
+    font-weight:300;
+    line-height:1.3;
+  }
+
+  .text-image__cta{
+    font-size:12px;
+    font-weight:500;
+    margin-top:16px;
+    letter-spacing:0px;
+    text-decoration: underline;
+  }
+
+  /* mobile */
+  @media only screen and (max-width: 959px) {
+    .image-right .grid__item:first-child{
+      order:2;
+    }
+
+    .section__text-image .grid:not(:last-child){
+      padding-bottom:40px;
+    }
+  }
+</style>
+
+<div class="page-width section__text-image">
+ {% for block in section.blocks %}
+  {% capture image-column %}
+  <div class="grid__item one-half small--one-whole">
+    <div class="text-image__image-container" style="background-image:url({{ block.settings.image | img_url: '1024x' }});"></div>
+  </div>
+  {% endcapture %}
+  <div class="grid {% if block.settings.layout == 'right' %}image-right{% endif %}">
+    {% if block.settings.layout == 'left' %}
+    {{ image-column }}
+    {% endif %}
+    <div class="grid__item one-half small--one-whole">
+      <div class="text-image__text-container" style="background:#F2F1ED;">
+        <div class="text-image__title">{{ block.settings.title }}
+        </div>
+        <div class="text-image__p">{{ block.settings.paragraph }}
+        </div>
+        <a class="text-image__cta" href="{{ block.settings.url }}">{{ block.settings.button }}</a>
+      </div>
+    </div>
+    {% if block.settings.layout == 'right' %}
+    {{ image-column }}
+    {% endif %}
+  </div>
+ {% endfor %}
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "MC Image Text Grid"
+  },
+  "class": "index-section",
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Row",
+      "settings": [
+		{
+          "type": "select",
+          "id": "layout",
+          "label": {
+            "en": "Image alignment"
+          },
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": {
+                "en": "Left"
+              }
+            },
+            {
+              "value": "right",
+              "label": {
+                "en": "Right"
+              }
+            }
+          ]
+        },		
+		{	
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {	
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },	
+        {
+          "type": "text",
+          "id": "paragraph",
+          "label": "Paragraph"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Button"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC Image Text Grid"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

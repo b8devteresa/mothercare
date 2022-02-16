@@ -1,0 +1,181 @@
+<style>
+  .section-bar{
+    width: 100%;
+    height: 53px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+    line-height: 53px;
+  }
+  .new-in-grid{
+    margin-top:40px;
+    text-align:center;
+  }
+  .new-in__title{
+    font-size: 24px;
+  }
+  .new-in__cta{
+    font-size:12px;
+    text-decoration: underline;
+  }
+
+  /* desktop */
+  @media only screen and (min-width: 960px) {
+  }
+
+  /* mobile */
+  @media only screen and (max-width: 959px) {
+    .section__new-in .grid__item{
+      padding-bottom:16px;
+    }
+  }
+</style>
+
+<div class="page-width section__new-in">
+  <div class="section-bar" style="background-color:#F2C75C;">{{ section.settings.header}}</div>
+  <div class="grid new-in-grid">
+    <div class="grid__item medium-up--one-quarter small--one-half">
+      <img src="{{ section.settings.image-1 | img_url: '500x' }}">
+      <div class="new-in__container">
+        <div class="new-in__title">{{ section.settings.title-1}}</div>
+        <a class="new-in__cta" href="{{ section.settings.url-1 }}">{{ section.settings.button-1 }}</a>
+      </div>
+    </div>
+    <div class="grid__item medium-up--one-quarter small--one-half">
+      <img src="{{ section.settings.image-2 | img_url: '500x' }}">
+      <div class="new-in__container">
+        <div class="new-in__title">{{ section.settings.title-2 }}</div>
+        <a class="new-in__cta" href="{{ section.settings.url-2 }}">{{ section.settings.button-2 }}</a>
+      </div>
+    </div>
+    <div class="grid__item medium-up--one-quarter small--one-half">
+      <img src="{{ section.settings.image-3 | img_url: '500x' }}">
+      <div class="new-in__container">
+        <div class="new-in__title">{{ section.settings.title-3 }}</div>
+        <a class="new-in__cta" href="{{ section.settings.url-3 }}">{{ section.settings.button-3 }}</a>
+      </div>
+    </div>
+    <div class="grid__item medium-up--one-quarter small--one-half">
+      <img src="{{ section.settings.image-4 | img_url: '500x' }}">
+      <div class="new-in__container">
+        <div class="new-in__title">{{ section.settings.title-4 }}</div>
+        <a class="new-in__cta" href="{{ section.settings.url-4 }}">{{ section.settings.button-4 }}</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "MC New In"
+  },
+  "class": "index-section",
+  "settings": [
+	{	
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    },	
+	{	
+      "type": "image_picker",
+      "id": "image-1",
+      "label": "1st Image"
+    },
+	{
+      "type": "text",
+      "id": "title-1",
+      "label": "1st Title",
+      "default": "Default"
+    },
+    {
+      "type": "text",
+      "id": "button-1",
+      "label": "1st Button",
+      "default": "Welcome to my shop!"
+    },
+	{
+      "type": "url",
+      "id": "url-1",
+      "label": "1st URL"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-2",
+      "label": "2nd Image"
+    },
+	{
+      "type": "text",
+      "id": "title-2",
+      "label": "2nd Title",
+      "default": "Default"
+    },
+    {
+      "type": "text",
+      "id": "button-2",
+      "label": "2nd Button",
+      "default": "Welcome to my shop!"
+    },
+	{
+      "type": "url",
+      "id": "url-2",
+      "label": "2nd URL"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-3",
+      "label": "3rd Image"
+    },
+	{
+      "type": "text",
+      "id": "title-3",
+      "label": "3rd Title",
+      "default": "Default"
+    },
+    {
+      "type": "text",
+      "id": "button-3",
+      "label": "3rd Button",
+      "default": "Welcome to my shop!"
+    },
+	{
+      "type": "url",
+      "id": "url-3",
+      "label": "3rd URL"
+    },
+	{	
+      "type": "image_picker",
+      "id": "image-4",
+      "label": "4th Image"
+    },
+	{
+      "type": "text",
+      "id": "title-4",
+      "label": "4th Title",
+      "default": "Default"
+    },
+    {
+      "type": "text",
+      "id": "button-4",
+      "label": "4th Button",
+      "default": "Welcome to my shop!"
+    },
+	{
+      "type": "url",
+      "id": "url-4",
+      "label": "4th URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "MC New In"
+      },
+      "category": {
+        "en": "Mother Care"
+      }
+    }
+  ]
+}
+{% endschema %}

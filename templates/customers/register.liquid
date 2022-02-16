@@ -1,0 +1,29 @@
+{% assign pageurl = content_for_header| split:'"pageurl":"' | last | split:'"' | first | url_decode | split: '?' %}
+{% if pageurl.size > 1 %}
+{% assign customer_info = pageurl | last | split: '\u0026' %}
+{% if customer_info.size > 0 %}
+<script>
+  var customer_info = { 
+    {%- for info in customer_info -%}
+    {% assign infoArr = info | split: '=' %}
+    {{- infoArr | first | json -}} : {{- infoArr | last | json -}} {%- unless forloop.last == true -%},{%- endunless -%} 
+  	{%- endfor -%}
+  }
+</script>
+{% endif %}
+{% endif %}
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--one-half medium-up--push-one-quarter">
+
+      <div class="form-vertical">
+
+        <h1 class="text-center">{{ 'customer.register.title' | t }}</h1>
+
+        {%- assign formId = 'RegisterForm' -%}
+        {% render "customer-fields", form_id: "ewt0De" %}
+      </div>
+    </div>
+  </div>
+</div>

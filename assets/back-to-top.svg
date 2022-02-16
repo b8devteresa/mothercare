@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-949.000000, -474.000000)">
+            <g id="Group-3" transform="translate(949.000000, 474.000000)">
+                <circle id="Oval" stroke="#165C7D" fill-opacity="0" fill="#D8D8D8" cx="15" cy="15" r="14.5"></circle>
+                <g id="Group" transform="translate(11.000000, 5.000000)" stroke="#505759" stroke-linecap="square" stroke-width="1.5">
+                    <g id="Arrow" transform="translate(4.500000, 9.000000) rotate(-90.000000) translate(-4.500000, -9.000000) ">
+                        <g id="Group" transform="translate(1.942004, 3.919417)">
+                            <line x1="-3.43810218e-17" y1="1.06065695e-14" x2="4.95482742" y2="4.95482742" id="Line-3"></line>
+                            <line x1="-3.43810218e-17" y1="5.04517258" x2="4.95482742" y2="10" id="Line-3" transform="translate(2.477414, 7.522586) scale(1, -1) translate(-2.477414, -7.522586) "></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
